@@ -11,8 +11,8 @@ export class HabitacionesService {
   constructor(public peticion:HttpClient) { }
 
   consultarHabitaciones():Observable<any>{
-    //let uri="https://apigess.herokuapp.com/hotelesnick/habitaciones"------------aqui probamos con el api Guille
-    let uri="https://serve20222.herokuapp.com/hotelesnick/habitaciones"
+    let uri="https://apigess.herokuapp.com/hotelesnick/habitaciones"//------------aqui probamos con el api Guille
+    //let uri="https://serve20222.herokuapp.com/hotelesnick/habitaciones"
     return this.peticion.get(uri)
    }
 
